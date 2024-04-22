@@ -1,0 +1,16 @@
+<div class="carousel-inner"  style="background-color: #454647;">
+                <div class="carousel-item active" >
+                  <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
+                    <div class="flex-column" *ngFor="let weathercity of weatherList; index as i">
+                     <button type="button" class="btn btn-outline-success" (click)="navigateToWeather(weathercity.temperture,weathercity.city)">
+                        <p class="small" ><strong>{{weathercity.city}}</strong></p>
+                        <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;" *ngIf="weathercity.temperture<=10"></i>
+                        <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;" *ngIf="weathercity.temperture>10"></i>
+                        <p class="mb-0"><strong>{{weathercity.temperture}}°C</strong></p>
+                        <!-- <p class="mb-0 text-muted" style="font-size: .65rem;">PM</p> -->
+                     </button>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
