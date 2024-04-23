@@ -8,7 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class WeatherComponent implements OnInit{
   temperture : number = 0;
-  city : string = ""
+  city : string = "";
+  unit : string = 'C';
 
   constructor(private route:ActivatedRoute){}
 
@@ -24,5 +25,9 @@ export class WeatherComponent implements OnInit{
         this.city = name;
       }
     })
+  }
+
+  toggleUnit(){
+    this.unit = this.unit === 'C' ? 'F' : 'C;'
   }
 }

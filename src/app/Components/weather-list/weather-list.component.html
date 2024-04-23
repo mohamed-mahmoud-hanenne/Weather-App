@@ -1,7 +1,22 @@
+<div class="row">
+  <div class="col-sm-6 mb-3">
+    <input type="text" class="form-control" placeholder="Search"
+    [(ngModel)] = "searchText" 
+    >
+  </div>
+
+  <div class="col-sm-6 mb-3">
+    <button class="btn btn-primary btn-block" (click)="filterWeather()">
+      Search
+    </button>
+  </div>
+</div>
+ <button class="btn btn-primary mx-2 my-3" (click)="sortByCity('city')">sort By City</button>
+ <button class="btn btn-primary mx-2 my-3" (click)="sortByCity('temperture')">sort by temperture</button>
 <div class="carousel-inner"  style="background-color: #454647;">
                 <div class="carousel-item active" >
                   <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
-                    <div class="flex-column" *ngFor="let weathercity of weatherList; index as i">
+                    <div class="flex-column" *ngFor="let weathercity of filterList; index as i">
                      <button type="button" class="btn btn-outline-success" (click)="navigateToWeather(weathercity.temperture,weathercity.city)">
                         <p class="small" ><strong>{{weathercity.city}}</strong></p>
                         <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;" *ngIf="weathercity.temperture<=10"></i>

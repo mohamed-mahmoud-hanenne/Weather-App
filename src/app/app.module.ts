@@ -9,6 +9,8 @@ import { WeatherListComponent } from './Components/weather-list/weather-list.com
 import { FooterComponent } from './Components/footer/footer.component';
 import { NotFountComponent } from './Components/not-found/not-fount.component';
 import { BackGroundColorDirective } from './Directives/back-ground-color.directive';
+import { TemperatureConversionPipe } from './Pipes/temperature-conversion.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { BackGroundColorDirective } from './Directives/back-ground-color.directi
     WeatherListComponent,
     FooterComponent,
     NotFountComponent,
-    BackGroundColorDirective
+    BackGroundColorDirective,
+    TemperatureConversionPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

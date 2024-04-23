@@ -14,9 +14,12 @@
   
               <div class="d-flex flex-column text-center mt-5 mb-4">
                 <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;">
-                  {{temperture}}°C 
+                  {{temperture | temperatureConversion: unit | number:'1.0-0'}}
+                  <span *ngIf="unit=='F'">°C</span>
+                  <span *ngIf="unit=='C'">°F</span>
                 </h6>
                 <span class="small" style="color: #868B94">{{city}}</span>
+                <button type="button" class="btn btn-primary"(click)="toggleUnit()">Change unité</button>
               </div>
   
               <div class="d-flex align-items-center">
@@ -29,8 +32,8 @@
                   </div>
                 </div>
                 <div>
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
-                    width="100px">
+                  <i class="fas fa-cloud fa-2x mb-3" style="color: #4B515D;" *ngIf="temperture<=10"></i>
+                  <i class="fas fa-sun fa-2x mb-3" style="color: #4B515D;" *ngIf="temperture>10"></i>
                 </div>
               </div>
   
