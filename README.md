@@ -1,27 +1,38 @@
-# WeatherApp
+# Weather App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+Bienvenue dans le projet Weather App, une application simple développée avec Angular. Cette application vous permet de visualiser les températures des villes par liste ou individuellement. Les statistiques des villes sont également enregistrées.
 
-## Development server
+## Fonctionnalités
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Visualisation des températures** : Consultez les températures des villes par liste ou individuellement.
+- **Statistiques des villes** : Les villes sont enregistrées avec leurs statistiques.
+- **Interface utilisateur** : Utilisation de Bootstrap pour des interfaces esthétiques et réactives.
+- **Directives personnalisées** : Changement de l'arrière-plan en fonction de la température.
+- **Pipes personnalisés** : Conversion des unités de température de Celsius vers Fahrenheit et vice-versa.
+- **Angular** : L'application est construite avec Angular.
 
-## Code scaffolding
+## Prérequis
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Node.js** : Assurez-vous d'avoir Node.js (version 12 ou plus récente) installé.
+- **Angular CLI** : Assurez-vous d'avoir Angular CLI (version 12 ou plus récente) installé.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Cloner le projet** : Clonez le dépôt GitHub sur votre machine locale :
+    ```bash
+    git clone https://github.com/votre-utilisateur/weather-app.git
+    cd weather-app
+    ```
 
-## Running unit tests
+2. **Installer les dépendances** : Exécutez la commande suivante pour installer les dépendances du projet :
+    ```bash
+    npm install
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Exécution
 
-## Running end-to-end tests
+Pour lancer l'application localement, utilisez la commande suivante :
+```bash
+ng serve
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Demo
