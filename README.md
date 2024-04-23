@@ -16,18 +16,17 @@ Bienvenue dans le projet Weather App, une application simple développée avec A
 - **Node.js** : Assurez-vous d'avoir Node.js (version 12 ou plus récente) installé.
 - **Angular CLI** : Assurez-vous d'avoir Angular CLI (version 12 ou plus récente) installé.
 
-## Installation
+### Directives structurelles :
 
-1. **Cloner le projet** : Clonez le dépôt GitHub sur votre machine locale :
-    ```bash
-    git clone https://github.com/votre-utilisateur/weather-app.git
-    cd weather-app
-    ```
+- **`*ngIf`** : Affichage ou masquage conditionnel d'éléments DOM.
+- **`*ngFor`** : Itération sur une liste d'éléments et génération dynamique d'éléments DOM.
 
-2. **Installer les dépendances** : Exécutez la commande suivante pour installer les dépendances du projet :
-    ```bash
-    npm install
-    ```
+## Installation et Utilisation
+
+1. Assurez-vous d'avoir Node.js et Angular CLI installés sur votre système.
+2. Exécutez `npm install` pour installer les dépendances.
+3. Exécutez `ng serve` pour démarrer le serveur de développement.
+4. Ouvrez votre navigateur et accédez à [http://localhost:4200/](http://localhost:4200/) pour utiliser l'application.
 
 ## Exécution
 
