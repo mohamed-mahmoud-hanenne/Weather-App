@@ -28,10 +28,4 @@ Bienvenue dans le projet Weather App, une application simple développée avec A
 3. Exécutez `ng serve` pour démarrer le serveur de développement.
 4. Ouvrez votre navigateur et accédez à [http://localhost:4200/](http://localhost:4200/) pour utiliser l'application.
 
-## Exécution
-
-Pour lancer l'application localement, utilisez la commande suivante :
-```bash
-ng serve
-
 ## Demo
