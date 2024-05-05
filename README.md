@@ -29,3 +29,4 @@ Bienvenue dans le projet Weather App, une application simple développée avec A
 4. Ouvrez votre navigateur et accédez à [http://localhost:4200/](http://localhost:4200/) pour utiliser l'application.
 
 ## Demo
+https://github.com/mohamed-mahmoud-hanenne/Weather-App/assets/96345931/13d8066f-aabc-42f1-8daa-4c3540cca981
